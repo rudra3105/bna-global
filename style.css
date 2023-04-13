@@ -1,0 +1,189 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  width: 4rem;
+  height: 4rem;
+}
+.nav-inner {
+  display: flex;
+  align-items: center;
+}
+.nav-inner h3 {
+  margin: 0;
+  letter-spacing: 1.5px;
+  color: var(--grey-100);
+}
+.nav-inner button {
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 1rem;
+  color: #6991fa;
+}
+button:hover {
+  background: #6991fa;
+  color: white;
+}
+
+#form input, select, textarea {
+	width: 100%;
+	padding: 10px;
+	/* border: 1px solid #ccc; */
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+#form input, textarea {
+	height: 2.25rem;
+	background: #6a6f823d;
+	border: 1px solid #6991fa;
+	color: #f9faff;
+  width: 100%;
+}
+
+.form-inner {
+  background: #23305381;
+  padding: 3rem;
+  border-radius: 4px;
+  width: 24rem;
+  margin: 1rem;
+}
+@media (max-width: 767px) {
+  .form-inner {
+    width: 100%;
+  }
+}
+
+
+.form-btn {
+  background: transparent;
+  border: 0;
+  outline: 2px solid #6997fa;
+  color: #f9faff;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+
+.header-main {
+  display: flex;
+  width: 100%;
+}
+.header-inner, .form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.form {
+  margin: auto;
+}
+.header-inner {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: 50%;
+}
+.header-inner h2 {
+  color: var(--grey-100);
+}
+.header-inner h3 {
+  color: var(--grey-300);
+  margin-bottom: 1rem;
+}
+@media (max-width: 700px) {
+  .header-main {
+    flex-direction: column;
+  }
+  .header-inner {
+    padding: 0;
+    padding-left: 2rem;
+    text-align: center;
+    flex-basis: 100%;
+  }
+}
+
+.header__img--wrapper {
+  /* padding: 20px; */
+  margin: 0 auto;
+  /* Added this after the tutorial to 
+  show it over the wave on larger screens */
+  z-index: 50;
+
+  /* Added this after the tutorial to 
+  make landing page responsive on laptops */
+  max-height: 30rem;
+  max-width: 30rem;
+  text-align: center;
+}
+.header__img--wrapper img {
+  width: 100%;
+  height: 20rem;
+  margin: 1rem;
+}
+.header__img--wrapper img {
+  /* max-width: 80%; */
+  /* max-height: 10rem; */
+}
+
+
+/* services  */
+.services-inner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+}
+.services-inner>div {
+  /* margin: 0.5rem; */
+  text-align: center;
+  width: 14rem;
+  font-size: 1.2rem;
+}
+.services-inner>div img {
+  width: 100%;
+}
+.service-btn {
+  margin: auto;
+}
+
+#service h2 {
+  margin: auto;
+  max-width: 70%;
+  text-align: center;
+}
+@media (max-width: 700px) {
+  #service h2 {
+    font-size: 1.8rem;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 .5rem;
+  }
+  .services-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .services-inner>div {
+    width: 10rem;
+  } 
+}
+
+/* footer */
+#footer {
+  display: flex;
+  justify-content: space-around;
+}
+#footer p {
+  margin-bottom: 0;
+}
+@media (max-width: 700px) {
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer h4 {
+    margin-top: 2.5rem;
+  }
+}
